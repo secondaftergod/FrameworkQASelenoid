@@ -23,7 +23,7 @@ public class LogInTest extends BaseTest {
     @Test(description = "Login Error")
     public void loginError(){
         Actions.loginActions().typeErrorLogin();
-        Assert.assertEquals("Epic sadface: Username and password do not match any user in this service",Pages.loginPage().typeLoginError());
+        Assert.assertEquals("Epic1 sadface: Username and password do not match any user in this service",Pages.loginPage().typeLoginError());
 
     }
 }
