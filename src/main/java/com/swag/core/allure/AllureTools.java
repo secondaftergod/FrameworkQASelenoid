@@ -41,7 +41,7 @@ public class AllureTools {
             e.printStackTrace();
         }
         try {
-            newFile.delete();
+//            newFile.delete();
             return IOUtils.toByteArray(inputStream);
         } catch (IOException e) {
             e.printStackTrace();

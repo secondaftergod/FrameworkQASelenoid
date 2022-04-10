@@ -14,17 +14,32 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <testng>7.5</testng>
+        <testng>7.0.0</testng>
+        <json-simple>1.1.1</json-simple>
         <selenide>6.3.5</selenide>
         <assertj>3.22.0</assertj>
         <logback>1.2.11</logback>
+        <lombok>1.18.22</lombok>
+        <json>20220320</json>
+        <jackson-core>2.13.2</jackson-core>
+        <javax.mail>1.6.2</javax.mail>
+        <pdf-test>1.7.0</pdf-test>
+        <jaxb-api>2.4.0-b180830.0359</jaxb-api>
+        <rest-assured>4.5.1</rest-assured>
         <org.slf4j>1.7.36</org.slf4j>
+        <mail>1.4.7</mail>
+        <commons-io>2.11.0</commons-io>
+        <httpcore>4.4.15</httpcore>
+        <jackson-databind>2.13.2.2</jackson-databind>
+        <httpclient>4.5.13</httpclient>
+        <tesseract-platform>5.0.1-1.5.7</tesseract-platform>
         <allure.version>2.17.3</allure.version>
         <aspectj.version>1.9.9</aspectj.version>
         <test.resource.dir>src${file.separator}test${file.separator}resources</test.resource.dir>
         <suiteXmlFile>AllTest</suiteXmlFile>
         <main.resource.dir>${project.basedir}${file.separator}src${file.separator}main${file.separator}resources</main.resource.dir>
         <client.resource.dir>${main.resource.dir}${file.separator}client</client.resource.dir>
+
     </properties>
 
     <dependencies>
@@ -37,7 +52,7 @@
         <dependency>
             <groupId>com.googlecode.json-simple</groupId>
             <artifactId>json-simple</artifactId>
-            <version>1.1.1</version>
+            <version>${json-simple}</version>
         </dependency>
 
         <dependency>
@@ -85,38 +100,38 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.22</version>
+            <version>${lombok}</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>javax.xml.bind</groupId>
             <artifactId>jaxb-api</artifactId>
-            <version>2.4.0-b180830.0359</version>
+            <version>${jaxb-api}</version>
         </dependency>
 
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
-            <version>20220320</version>
+            <version>${json}</version>
         </dependency>
 
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
-            <version>4.5.1</version>
+            <version>${rest-assured}</version>
         </dependency>
 
         <dependency>
             <groupId>org.bytedeco</groupId>
             <artifactId>tesseract-platform</artifactId>
-            <version>5.0.1-1.5.7</version>
+            <version>${tesseract-platform}</version>
         </dependency>
 
         <dependency>
             <groupId>com.codeborne</groupId>
             <artifactId>pdf-test</artifactId>
-            <version>1.7.0</version>
+            <version>${pdf-test}</version>
         </dependency>
 
         <!--<dependency>
@@ -128,40 +143,40 @@
         <dependency>
             <groupId>com.sun.mail</groupId>
             <artifactId>javax.mail</artifactId>
-            <version>1.6.2</version>
+            <version>${javax.mail}</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/javax.mail/mail -->
         <dependency>
             <groupId>javax.mail</groupId>
             <artifactId>mail</artifactId>
-            <version>1.4.7</version>
+            <version>${mail}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
-            <version>4.5.13</version>
+            <version>${httpclient}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpcore</artifactId>
-            <version>4.4.15</version>
+            <version>${httpcore}</version>
         </dependency>
 
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.13.2.2</version>
+            <version>${jackson-databind}</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-core</artifactId>
-            <version>2.13.2</version>
+            <version>${jackson-core}</version>
         </dependency>
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
-            <version>2.11.0</version>
+            <version>${commons-io}</version>
             <scope>compile</scope>
         </dependency>
 

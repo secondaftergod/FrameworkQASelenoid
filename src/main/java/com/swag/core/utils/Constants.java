@@ -6,7 +6,7 @@ import java.time.format.DateTimeFormatter;
 
 public class Constants {
     public static String URL = PropertyLoader.get("base_url");
-    public static String REMOTE_URL = PropertyLoader.get("remote_url");
+    public static String REMOTE_URL = PropertyLoader.get("remoteurl");
 
     public static String USERNAME = "standard_user";
     public static String PASSWORD = "secret_sauce";
